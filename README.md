@@ -12,7 +12,7 @@ Clarke::Messenger::Config.facebook_page_token = 'your_facebook_page_token'
 
 post '/messenger' do
   request_body = JSON.parse(request.body.read)
-  Clarke.process_request(Clarke::Messenger, request_body)
+  Clarke.process(Clarke::Messenger, request_body)
 end
 ```
 
@@ -42,3 +42,7 @@ A `TextMessage` have to the following attributes: `type` and `media`.
 
 ### Metadata
 Not implemented yet
+
+## Testing
+
+We suggest you use [ngrok](https://ngrok.com/) to easily test your facebook bot
