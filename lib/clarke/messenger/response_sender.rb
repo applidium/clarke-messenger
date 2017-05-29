@@ -13,7 +13,7 @@ module Clarke
 
         def send_messenger_response (response)
           request_body = response.get_request_body
-          HTTP.headers(content_type: "application/json", accept: "application/json")
+          puts HTTP.headers(content_type: "application/json", accept: "application/json")
             .post(request_endpoint, :body => request_body)
         end
 
