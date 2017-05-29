@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_dependency 'http'
-  s.add_runtime_dependency 'clarke', '~> 0.2.0'
+  s.add_runtime_dependency 'clarke', '~> 0.3.0'
 
   s.add_development_dependency 'rack',            '~> 1.6', '> 1.6'
   s.add_development_dependency 'test-unit',       '~> 3.0', '>= 3.0.0'
